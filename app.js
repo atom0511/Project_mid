@@ -15,7 +15,6 @@ app.listen(port, err => {
   console.log(`App listen at ${port}`);
 });
 
-
 const aboutRouter = require("./routers/aboutRouter");
 const cartRouter = require("./routers/cartRouter");
 const checkoutRouter = require("./routers/checkoutRouter");
@@ -24,6 +23,7 @@ const indexRouter = require("./routers/indexRouter");
 const shopRouter = require("./routers/shopRouter");
 const shopSingleRouter = require("./routers/shopSingleRouter");
 const thankyouRouter = require("./routers/thankyouRouter");
+const testRouter = require("./routers/testRouter");
 app.use("/", aboutRouter);
 app.use("/", cartRouter);
 app.use("/", checkoutRouter);
@@ -32,5 +32,5 @@ app.use("/", indexRouter);
 app.use("/", shopRouter);
 app.use("/", shopSingleRouter);
 app.use("/", thankyouRouter);
-
+app.use("/", testRouter);
 
