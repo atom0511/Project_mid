@@ -24,6 +24,10 @@ const shopRouter = require("./routers/shopRouter");
 const shopSingleRouter = require("./routers/shopSingleRouter");
 const thankyouRouter = require("./routers/thankyouRouter");
 const testRouter = require("./routers/testRouter");
+const loginRouter = require("./routers/loginRouter");
+const registerRouter = require("./routers/registerRouter");
+
+
 app.use("/", aboutRouter);
 app.use("/", cartRouter);
 app.use("/", checkoutRouter);
@@ -33,4 +37,12 @@ app.use("/", shopRouter);
 app.use("/", shopSingleRouter);
 app.use("/", thankyouRouter);
 app.use("/", testRouter);
+app.use("/", loginRouter);
+app.use("/", registerRouter);
+
+
+
+
+
+ 
 
