@@ -11,5 +11,18 @@ checkLogin = async (name, pass) => {
     }
     return false;
 }
-
-module.exports= {checkLogin: checkLogin};
+checkExistAccount = async (name) => {
+    console.log("checking exist account..");
+    let data = await readData("dataUser.json");
+    for (let i = 0; i < data.length; i++) {
+        if (name == data[i].userName) {
+            return true;
+        }
+    }
+    return false;
+}
+module.exports =
+{
+    checkLogin: checkLogin,
+    checkExistAccount: checkExistAccount
+};
